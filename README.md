@@ -11,7 +11,7 @@ Python 3.13.1 では動作確認済みです。\
 
 ```
 python -m pip install -r requirements.txt
-streamlit run app-robot.py
+streamlit run app.py
 ```
 
 初回実行の場合は、メールアドレスを入力してください。
