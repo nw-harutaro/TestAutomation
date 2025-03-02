@@ -2,7 +2,8 @@
 
 # 要件
 
-Python 3.13.1 では動作確認済み。
+Python 3.13.1 では動作確認済みです。\
+対象機器は Cisco-ios、NX-OS のみ動作確認してますが、基本何でも動くはずです。
 
 # セットアップ
 
@@ -43,8 +44,8 @@ streamlit run app-robot.py
 主なデバイスタイプは以下のとおりです。
 | DeviceType | 対象 | 接続方式 |
 | ---------------- | --------- | -------- |
-| cisco_ios | Cisco IOS | SSH |
-| cisco_ios_telnet | Cisco IOS | Telnet |
+| cisco_ios | Cisco ios | SSH |
+| cisco_ios_telnet | Cisco ios | Telnet |
 | cisco_nxos | Nexus | SSH |
 | apresia_aeos | Apresia AEOS | SSH |
 | juniper_junos | Juniper | SSH |
@@ -72,7 +73,7 @@ main タブで合格条件の入力、試験の実行を行うことができま
 | second_list number | -    | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
 | target             | △    | Device で登録した機器の中からテスト対象とするホスト名を入力してください<br>「all」と入力した場合、すべての機器が対象になります<br>「device1,device2」とカンマ区切りで複数の機器を対象にすることも可能です |
 
-画像の例では、test-rt に対して、`show run | i hostname`を実行し、出力結果に`test-rt`が含まれていれば合格となる
+画像の例では、test-rt に対して、`show run | i hostname`を実行し、出力結果に`test-rt`が含まれていれば合格となります。
 
 入力が完了したら、右下のボタン「Update test case」をクリックしてください。\
 クリックすると Data フォルダに CSV ファイルが作成され、データが保持されます。
@@ -120,7 +121,9 @@ main タブで合格条件の入力、試験の実行を行うことができま
 
 ### (参考)list number、key の書き方
 
-上記パース結果を例に、list number、key に何を入力したら、どんな値が取得できるのかを示します。
+list number、key を指定することで、ある特定の情報・ステータスを取得することが可能となり、より正確なテストケースを作成することができます。\
+例）OS バージョン、port1/0/1 の speed/duplex 情報など
+上記パース結果を例に、list number、key に何を入力したら、どんな値が取得できるのかを示します。\
 
 取得される値：17.10.1prd7
 | 項目名 | 値 |
@@ -143,3 +146,7 @@ main タブで合格条件の入力、試験の実行を行うことができま
 ![Image](https://github.com/user-attachments/assets/5b242968-ba2f-4def-8f74-a704d8f24ba8)
 
 ## Ping タブ
+
+Device に登録してあるすべての機器に対して Ping を実行し、結果を表示することができます。
+
+![Image](https://github.com/user-attachments/assets/3298cbd5-9f2b-4a58-8b19-7053a037f8d7)
