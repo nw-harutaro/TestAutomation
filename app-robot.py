@@ -191,12 +191,11 @@ def style_ping_results(df):
 
 # ↑↑↑↑ 関数定義 ↑↑↑↑
 
+# ワイドレイアウト
+st.set_page_config(layout="wide")
 
 # Webアプリのタイトル
 st.title("Test Automation")
-
-# ワイドレイアウト
-st.set_page_config(layout="wide")
 
 # タブを作成
 tab1, tab2, tab3, tab4 = st.tabs(["Device","Test-Case", "Get Logs", "Ping"])
