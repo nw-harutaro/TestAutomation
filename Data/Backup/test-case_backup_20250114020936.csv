@@ -1,0 +1,11 @@
+﻿expected value,operator,command,top_list number,top_key,second_list number,target
+TEST-SW-01,in,show running-config | include hostname,,,,
+TEST-SW-02,in,show running-config | include hostname,,,,
+TEST-RT-01,in,show running-config | include hostname,,,,
+TEST-RT-02,in,show running-config | include hostname,,,,
+"login local,transport input all",in,show running-config | section line vty 0 4,,,,
+17.10.1prd7,in,show version,0.0,version,,all
+80,>,show processes cpu,0.0,cpu_usage_5_sec,,"TEST-SW-01,TEST-RT-01,TEST-RT-01"
+80,>,show processes cpu,0.0,cpu_5_sec,,TEST-SW-02
+fail-username,in,show running-config | include username,,,,
+fail-domainname,in,show running-config | include domain,,,,

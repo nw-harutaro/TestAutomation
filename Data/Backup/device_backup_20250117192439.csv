@@ -1,0 +1,10 @@
+﻿Hostname,IPAddress,Username,Password,EnablePass,LogName,DeviceType,check,description
+HARUTARO-RT-01-A,192.168.10.10,harutaro,cisco,cisco,,cisco_ios,,
+TEST-SW-01,198.18.1.10,admin,C1sco12345,C1sco12345,,cisco_ios,●,
+TEST-SW-02,198.18.1.11,admin,C1sco12345,C1sco12345,,cisco_nxos,●,
+TEST-RT-01,198.18.1.12,admin,C1sco12345,C1sco12345,,cisco_ios,●,
+TEST-RT-02,198.18.1.13,admin,C1sco12345,C1sco12345,,cisco_ios,●,
+dummy1,198.18.1.100,,,,,,,
+dummy2,198.18.1.101,,,,,,,
+dummy3,198.18.1.102,,,,,,,
+dummy4,198.18.1.103,,,,,,,

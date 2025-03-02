@@ -1,0 +1,11 @@
+﻿Command
+show version
+show processes cpu
+show environment all
+show ip interface brief
+show interfaces status
+show ip route
+show vlan-switch
+show interfaces description
+""
+""
