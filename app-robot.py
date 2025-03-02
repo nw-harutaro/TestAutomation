@@ -193,7 +193,7 @@ def style_ping_results(df):
 
 
 # Webアプリのタイトル
-# st.title("Python Script Executor")
+st.title("Test Automation")
 
 # ワイドレイアウト
 st.set_page_config(layout="wide")
