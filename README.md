@@ -22,7 +22,7 @@ streamlit run app-robot.py
 ## Device タブ
 
 まずは、Device タブで対象機器の情報を入力します。
-![Image](https://github.com/user-attachments/assets/0e4b1aec-bc60-4f12-aa4a-d26192819321)
+![Image](https://github.com/user-attachments/assets/88c9ee5b-1be3-403e-8213-878b86dbe759)
 
 | 項目名      | 必須 | 説明                                                                                            |
 | ----------- | ---- | ----------------------------------------------------------------------------------------------- |
