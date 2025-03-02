@@ -68,8 +68,8 @@ main タブで合格条件の入力、試験の実行を行うことができま
 | operator           | 〇   | =、in、<、>の中から入力してください                                                                                                                                                                       |
 | command            | 〇   | 実行するコマンドを入力してください                                                                                                                                                                        |
 | top_list number    | -    | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
-| top_key            | 〇   | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
-| second_list number | 任〇 | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
+| top_key            | -    | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
+| second_list number | -    | 下記、「list number、key の書き方」を参照してください                                                                                                                                                     |
 | target             | △    | Device で登録した機器の中からテスト対象とするホスト名を入力してください<br>「all」と入力した場合、すべての機器が対象になります<br>「device1,device2」とカンマ区切りで複数の機器を対象にすることも可能です |
 
 画像の例では、test-rt に対して、`show run | i hostname`を実行し、出力結果に`test-rt`が含まれていれば合格となる
