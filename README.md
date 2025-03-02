@@ -67,9 +67,9 @@ main タブで合格条件の入力、試験の実行を行うことができま
 | expected value     | 必須 | テスト実行時の期待される値を入力してください                                                                                                                                                            |
 | operator           | 必須 | =、in、<、>の中から入力してください                                                                                                                                                                     |
 | command            | 必須 | 実行するコマンドを入力してください                                                                                                                                                                      |
-| top_list number    | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
-| top_key            | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
-| second_list number | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
+| top_list number    | 任意 | 下記、「list number、key の書き方」を参照してください                                                                                                                                                   |
+| top_key            | 任意 | 下記、「list number、key の書き方」を参照してください                                                                                                                                                   |
+| second_list number | 任意 | 下記、「list number、key の書き方」を参照してください                                                                                                                                                   |
 | target             | 必須 | Device で登録した機器の中からテスト対象とするホスト名を入力してください。「all」と入力した場合、すべての機器が対象になります。「device1,device2」とカンマ区切りで複数の機器を対象にすることも可能です。 |
 
 画像の例では、test-rt に対して、`show run | i hostname`を実行し、出力結果に`test-rt`が含まれていれば合格となる
@@ -109,8 +109,8 @@ main タブで合格条件の入力、試験の実行を行うことができま
 入力が完了したら、右下のボタン「Update command list」をクリックしてください。\
 クリックすると Data フォルダに CSV ファイルが作成され、データが保持されます。
 
-ボタン「Get logs」をクリックすると、入力したコマンドでログが取得されます。
-またボタン「Parse Run」をクリックすると、コマンドのパースが実行されます。
+ボタン「Get logs」をクリックすると、入力したコマンドでログが取得されます。\
+また、ボタン「Parse Run」をクリックすると、コマンドのパースが実行されます。
 
 ### parse result タブ
 
@@ -137,6 +137,8 @@ main タブで合格条件の入力、試験の実行を行うことができま
 | second_list number | 0 |
 
 ### text-based log タブ
+
+プルダウンから log ファイルを選択することで、ログファイルを表示することができます。
 
 ![Image](https://github.com/user-attachments/assets/5b242968-ba2f-4def-8f74-a704d8f24ba8)
 
