@@ -53,6 +53,13 @@ streamlit run app-robot.py
 
 ## テストケース
 
+Test-Case タブでは、入力した合格条件をもとに試験を実行することができます。
+試験結果のログもブラウザ上で閲覧することが可能です。
+
+### main タブ
+
+main タブで合格条件の入力、試験の実行を行うことができます。
+
 ![Image](https://github.com/user-attachments/assets/63d42952-2c55-4d46-aeaf-fade0f92676f)
 
 | 項目名             | 必須 | 説明                                                                                                                                                                                                    |
@@ -63,7 +70,29 @@ streamlit run app-robot.py
 | top_list number    | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
 | top_key            | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
 | second_list number | 任意 | 詳細は～を参照してください                                                                                                                                                                              |
-| target             | 必須 | Device で登録した機器の中からテスト対象とするホスト名を入力してください。「all」と入力した場合、すべての機器が対象になります。「device1,device2」とカンマ区切りで複数の機器を対象にすることもできます。 |
+| target             | 必須 | Device で登録した機器の中からテスト対象とするホスト名を入力してください。「all」と入力した場合、すべての機器が対象になります。「device1,device2」とカンマ区切りで複数の機器を対象にすることも可能です。 |
+
+画像の例では、test-rt に対して、`show run | i hostname`を実行し、出力結果に`test-rt`が含まれていれば合格となる
+
+入力が完了したら、右下のボタン「Update test case」をクリックしてください。\
+クリックすると Data フォルダに CSV ファイルが作成され、データが保持されます。
+
+### summary test report タブ
+
+プルダウンから HTML ファイルを選択することで、試験結果のサマリを表示することができます。
+
+![Image](https://github.com/user-attachments/assets/be600096-52fa-4c35-bda6-b1bab14fe9eb)
+
+### text-based test log タブ
+
+プルダウンから log ファイルを選択することで、試験結果の詳細レポートを表示することができます。
+
+![Image](https://github.com/user-attachments/assets/5b242968-ba2f-4def-8f74-a704d8f24ba8)
+
+### detail test report タブ
+
+プルダウンから HTML ファイルを選択することで、試験で取得したログファイルを表示することができます。\
+※Robotframework で自動生成されるものです。
 
 ## ログ取得
 
