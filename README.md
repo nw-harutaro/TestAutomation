@@ -18,7 +18,7 @@ streamlit run app-robot.py
 
 # 使い方
 
-## 機器登録
+## Device タブ
 
 まずは、Device タブで対象機器の情報を入力します。
 ![Image](https://github.com/user-attachments/assets/0e4b1aec-bc60-4f12-aa4a-d26192819321)
@@ -51,7 +51,7 @@ streamlit run app-robot.py
 
 詳細は「netmik device_type」で検索してみてください。
 
-## テストケース
+## Test-Case タブ
 
 Test-Case タブでは、入力した合格条件をもとに試験を実行することができます。
 試験結果のログもブラウザ上で閲覧することが可能です。
@@ -77,6 +77,8 @@ main タブで合格条件の入力、試験の実行を行うことができま
 入力が完了したら、右下のボタン「Update test case」をクリックしてください。\
 クリックすると Data フォルダに CSV ファイルが作成され、データが保持されます。
 
+ボタン「Test Case Run」をクリックすると、入力した内容で試験が実行されます。
+
 ### summary test report タブ
 
 プルダウンから HTML ファイルを選択することで、試験結果のサマリを表示することができます。
@@ -85,17 +87,57 @@ main タブで合格条件の入力、試験の実行を行うことができま
 
 ### text-based test log タブ
 
-プルダウンから log ファイルを選択することで、試験結果の詳細レポートを表示することができます。
+プルダウンから log ファイルを選択することで、試験で取得したログファイルを表示することができます。
 
 ![Image](https://github.com/user-attachments/assets/5b242968-ba2f-4def-8f74-a704d8f24ba8)
 
 ### detail test report タブ
 
-プルダウンから HTML ファイルを選択することで、試験で取得したログファイルを表示することができます。\
+プルダウンから HTML ファイルを選択することで、試験結果の詳細レポートを表示することができます。\
 ※Robotframework で自動生成されるものです。
 
-## ログ取得
+## Get Logs タブ
 
+テキストベースのログを取得することができます。\
+また、テストケースの top_list number を入力する際に役立つ、コマンドのパースを実行することも可能です。
+
+### main タブ
+
+取得したいコマンドを入力します。
 ![Image](https://github.com/user-attachments/assets/385d741a-37fa-44bf-8382-7ac635cf45d6)
 
-## Ping 実行
+入力が完了したら、右下のボタン「Update command list」をクリックしてください。\
+クリックすると Data フォルダに CSV ファイルが作成され、データが保持されます。
+
+ボタン「Get logs」をクリックすると、入力したコマンドでログが取得されます。
+またボタン「Parse Run」をクリックすると、コマンドのパースが実行されます。
+
+### parse result タブ
+
+プルダウンから HTML ファイルを選択することで、パースの結果を表示することができます。
+
+![Image](https://github.com/user-attachments/assets/6df5cbd8-ecd7-4d7a-9034-fd325d304410)
+
+### (参考)list number、key の書き方
+
+上記パース結果を例に、list number、key に何を入力したら、どんな値が取得できるのかを示します。
+
+取得される値：17.10.1prd7
+| 項目名 | 値 |
+| ------------------ | -------- |
+| top_list number | 0 |
+| top_key | version |
+| second_list number | 入力なし |
+
+取得される値：C9KV-Q200-8P
+| 項目名 | 値 |
+| ------------------ | -------- |
+| top_list number | 0 |
+| top_key | hardware |
+| second_list number | 0 |
+
+### text-based log タブ
+
+![Image](https://github.com/user-attachments/assets/5b242968-ba2f-4def-8f74-a704d8f24ba8)
+
+## Ping タブ
